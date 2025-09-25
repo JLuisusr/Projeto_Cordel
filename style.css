@@ -36,7 +36,7 @@ header {
 
 }
 
-header a, footer a {text-decoration: none;color: white; font-weight: bolder;}
+header a, footer a {text-decoration: none;color: white; font-weight:900;}
 
 header a:hover, footer a:hover{
     text-decoration: underline;
@@ -47,6 +47,7 @@ p {
     font-family: var(--fonte3);
     font-size: 3.5vw;
     line-height: 2em;
+    padding-bottom: 2em;
 
     
 }
@@ -62,7 +63,7 @@ section.normal{padding-bottom: 2em;}
 .especial{
     display: inline-block;
     color: white;
-    background-color: rgba(0,0,0,0.68);
+    background-color: rgba(0,0,0,0.58);
     padding: 5px;
     text-shadow:1px 1px 0px rgb(0, 0, 0) ;
 }
@@ -92,4 +93,10 @@ footer{
     background-color: black;
     color: white;
     padding: center;
-    text-align: center;}
+    text-align: center;
+    p{
+        font-family: var(--fonte1);
+        font-size: 1em;
+        padding: 10px;
+        margin: auto;
+    }}
