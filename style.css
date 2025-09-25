@@ -10,87 +10,86 @@
     --fonte3: 'Sriracha', cursiva;
 }
 
+*{margin: 0;padding: 0;}
+
+html,body{min-height: 100vh;}
 
 
 header {
-        background-color: black;color:white;
-        font-family: var(--fonte2);
-        text-align: center;
+    background-color: black;
+    color:white;
+    font-family: var(--fonte2);
+    text-align: center;
 
+    h1{ font-family: var(--fonte2);
+        font-size: 10vw;
+        font-variant: small-caps;
+        padding-top: 50px;
+    }
 
-}
-
-header p {
-
-    font-family: var(--fonte1);
-    padding-bottom: 50px;
-    font-size: 1em;
-    a{text-decoration: none;color: white; font-weight: bolder;}
-
-    
-}
-
-
-h1{ font-family: var(--fonte2);
-    font-size: 10vw;
-    font-variant: small-caps;
-    padding-top: 50px;
-        
+    p{
+        font-family: var(--fonte1);
+        padding-bottom: 50px;
+        font-size: 1em;
     }
 
 
-*{margin: 0;
-    padding: 0;
 }
+
+header a, footer a {text-decoration: none;color: white; font-weight: bolder;}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
 
 p {
     font-family: var(--fonte3);
     font-size: 3.5vw;
     line-height: 2em;
+
     
 }
 
-section > p{
-    padding-left: 5px;
-    padding-bottom: 2em;
+
+section{ 
+    padding: 10vh 0px 10vh 35px;
 
 }
 
-section{
-    position: relative;
-    padding-top: 2em ;
-    padding-bottom: 2em ;
-    border-bottom: 1px solid black;
-}
-
-section.normal{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-
-}
+section.normal{padding-bottom: 2em;}
 
 .especial{
+    display: inline-block;
     color: white;
-    width: 10vh;
-    line-height: 2.1em;
     background-color: rgba(0,0,0,0.68);
-    margin: 10vh 80px 10vh 30px;
-    width: 56vh;
+    padding: 5px;
+    text-shadow:1px 1px 0px rgb(0, 0, 0) ;
+}
+
+.img{
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+
 }
 
 #abelha{
     background-image: url(pacote-d012/imagens/background001.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: right;
+
 
 
 }
 
 #paginalivro{
     background-image: url(pacote-d012/imagens/background002.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: right;
+ 
 
 }
+
+footer{
+    background-color: black;
+    color: white;
+    padding: center;
+    text-align: center;}
